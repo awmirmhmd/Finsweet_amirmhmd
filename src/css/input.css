@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+@layer components{
+
+    #open:checked ~ .Menu{
+        @apply right-[0px]
+    }
+
+    #close:checked ~ .Menu{
+        @apply right-[-300px]
+    }
+
+    .OurWork .Content{
+
+        .one:hover .hover{
+            @apply top-0
+        }
+
+        .three:hover .img{
+            .hover{
+                
+                @apply bottom-0
+            }
+        }
+
+    }
+
+    .ContactForm .child:hover .StartConvert .Cover{
+        @apply bottom-0
+    }
+
+    @screen md{
+        .NavBar .logo{
+            @apply w-[30%] h-[100%] 
+        }
+
+        .NavBar .Menu{
+            @apply w-[70%] h-[100%]
+        }
+
+        .OurWork .Content{
+
+            .one:hover .hover{
+                @apply right-1/2
+            }
+        }
+        
+    }
+
+}
+

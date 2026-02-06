@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/public/vite.svg" />
+    <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <title>About Us</title>
+</head>
+<body>
+    
+    <header class="w-full h-25 bg-[#1C1E53] flex justify-center">
+        
+        <!-- NavBar -->
+        <div id="NavBar" class="NavBar w-full md:w-[95.5rem] h-16 bg-[#1C1E53] flex flex-row justify-center items-center">
+
+          <!-- Logo -->
+          <div class="logo w-[95%] md:w-[30%] h-[100%] flex justify-center items-center font-bold text-[25px] text-white md:font-bold md:justify-start">
+            <h1 class="md:text-3xl">{Finsweet</h1>
+          </div>
+
+          <!-- Menu -->
+          <div class="Menu md:flex md:flex-row md:items-center md:justify-evenly md:px-[0px] hidden">
+            <a href="./index.html" target="_blank" class="md:text-white md:no-underline md:text-lg">Home</a>
+            <a href="" class="md:text-white md:no-underline md:text-lg">About Us</a>
+            <a href="" class="md:text-white md:no-underline md:text-lg">Features</a>
+            <a href="./Pricing.html" target="_blank" class="md:text-white md:no-underline md:text-lg">Pricing</a>
+            <a href="" class="md:text-white md:no-underline md:text-lg">FAQ</a>
+            <a href="" class="md:text-white md:no-underline md:text-lg">Blog</a>
+            <button class="md:w-[150px] md:h-[50px] md:rounded-[40px] md:text-white md:border md:border-y-gray-400 md:font-[600] md:text-lg">Contact Us</button>
+          </div>
+
+          <!-- BurgerMenu -->
+          <div class="BurgerMenu w-[5%] h-[100%] flex justify-center items-center relative md:hidden">
+
+            <label for="open">
+              <svg class="w-[40px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>
+              </svg>
+            </label>
+
+            <input type="radio" id="open" name="amir" class="z-10 translate-x-[-30px] translate-y-[30px] hidden">
+
+            <input type="radio" id="close" name="amir" class="z-10 translate-x-[-30px] translate-y-[30px] hidden">
+
+            <!-- menu -->
+            <div class="Menu fixed w-[300px] h-[100vh] bg-[url(/public/img/MenuBack/178781445_23847b19-1d5c-4249-9f22-8827c6017007_11zon.webp)] bg-center bg-cover z-50  right-[-300px] top-[0px] duration-500 flex-row items-center text-center p-3">
+
+              <!-- close button -->
+              <div class="w-[100%] text-start">
+                <label for="close" class="text-[18px] w-16 text-center text-white font-bold ml-[5px] rounded hover:bg-red-600 duration-200">close</label>
+              </div>
+
+              <!-- links -->
+              <div class="w-[100%] h-[100vh] flex flex-col gap-[20px] pt-[50px] items-center">
+
+                <p class="m-0 w-full hover:bg-blue-800 hover: rounded-5 duration-150"><a href="./index.html" target="_blank" class="font-extrabold no-underline text-white text-[20px]">Home</a></p>
+
+                <p class="m-0 w-full hover:bg-blue-800 hover: rounded-5 duration-150"><a href="" class="font-extrabold no-underline text-white text-[20px]">About Us</a></p>
+
+                <p class="m-0 w-full hover:bg-blue-800 hover: rounded-5 duration-150"><a href="" class="font-extrabold no-underline text-white text-[20px]">Features</a></p>
+
+                <p class="m-0 w-full hover:bg-blue-800 hover: rounded-5 duration-150"><a href="./Pricing.html" target="_blank" class="font-extrabold no-underline text-white text-[20px]">Pricing</a></p>
+
+                <p class="m-0 w-full hover:bg-blue-800 hover: rounded-5 duration-150"><a href="" class="font-extrabold no-underline text-white text-[20px]">FAQ</a></p>
+
+                <p class="m-0 w-full hover:bg-blue-800 hover: rounded-5 duration-150"><a href="" class="font-extrabold no-underline text-white text-[20px]">Blog</a></p>
+
+                <button class="w-[130px] h-[40px] rounded bg-yellow-400 font-[600]">Contact Us</button>
+
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+    </header>
+
+    <main class="w-full h-full flex flex-col items-center">
+
+      <!-- AboutUsHero -->
+      <div class="AboutUsHero w-full h-[600px] flex justify-center items-center">
+
+        <div class="child w-full md:w-[95.5rem] h-full flex flex-col md:flex-row">
+
+          <!-- Content -->
+          <div class="Content w-full md:w-1/2 h-1/2 md:h-full p-5 flex flex-col justify-evenly md:justify-center md:gap-6">
+            <p class="m-0 font-semibold md:text-lg">About Us</p>
+            <h2 class="text-5xl md:text-6xl">Our designs solve problems</h2>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+
+          <!-- Image -->
+          <div 
+          class="Image w-full md:w-1/2 h-1/2 md:h-full bg-[url(\public\img\AboutUs\AboutUsHero\18193468f71b71ae2cb5579a9f049b428e54f788.png)] bg-center bg-cover md:bg-contain bg-no-repeat"></div>
+
+        </div>
+
+      </div>
+
+      <!-- WhoWeAre -->
+      <div class="WhoWeAre w-full h-[800px] flex justify-center items-center">
+
+        <div class="child w-full md:w-[95.5rem] h-[716px] bg-[#F4F5F5] flex flex-col">
+
+          <!-- Content -->
+          <div class="Content w-full h-3/5 md:h-1/2 flex flex-col p-5 justify-center">
+            <p class="font-semibold">Who We Are</p>
+            
+            <div class="row">
+
+              <div class="col-6 px-3">
+                <h2 class="md:text-5xl">Goal focussed</h2>
+                <p class="text-justify md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+
+              <div class="col-6 px-3">
+                <h2 class="md:text-5xl">Continuous improvement</h2>
+                <p class="text-justify md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Image -->
+          <div 
+          class="Image w-full h-2/5 md:h-1/2 bg-[url(\public\img\AboutUs\WhoWeAre\243ebdcf77583630b5c592cfe693a45ac8529324.jpg)] bg-center bg-cover bg-no-repeat">
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Process -->
+      <div class="Process w-full h-[350px] flex flex-col justify-center items-center">
+
+        <div class="child w-full md:max-w-[95.5rem] h-full flex flex-col justify-center">
+
+          <!-- Heading -->
+          <div class="Heading w-full h-1/5 align-content-center">
+            <h2 class="text-center">The process we follow</h2>
+          </div>
+
+          <!-- Content -->
+          <div class="Content row w-full h-3/5 px-2 m-0">
+
+            <div class="col-3 flex flex-col justify-evenly">
+              <div class="w-full flex items-center gap-2">
+                <div class="size-5 bg-blue-600 rounded-[50%]"></div>
+                <hr class="w-3/4 border-dashed border-1">
+              </div>
+              <h2 class="w-full text-2xl">Planning</h2>
+              <p class="w-full">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+
+            <div class="col-3 flex flex-col justify-evenly">
+              <div class="w-full flex items-center gap-2">
+                <div class="size-5 bg-blue-600 rounded-[50%]"></div>
+                <hr  class="w-3/4 border-dashed border-1">
+              </div>
+              <h2 class="w-full text-2xl">Conception</h2>
+              <p class="w-full">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+
+            <div class="col-3 flex flex-col justify-evenly">
+              <div class="w-full flex items-center gap-2">
+                <div class="size-5 bg-blue-600 rounded-[50%]"></div>
+                <hr class="w-3/4 border-dashed border-1">
+              </div>
+              <h2 class="w-full text-2xl">Design</h2>
+              <p class="w-full">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+
+            <div class="col-3 flex flex-col justify-evenly">
+              <div class="w-full flex items-center gap-2">
+                <div class="size-5 bg-blue-600 rounded-[50%]"></div>
+                <hr class="w-3/4 border-dashed border-1">
+              </div>
+              <h2 class="w-full text-2xl">Development</h2>
+              <p class="w-full">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- OurMission/Vission -->
+      <div class="OurMission/Vission w-full h-[1100px] bg-[#EEF4FA] flex items-center justify-center">
+
+        <div class="child w-full md:w-[95.5rem] h-full flex flex-col justify-evenly">
+
+          <!-- OurMission -->
+          <div class="OurMission w-full h-2/5 flex">
+
+            <!-- Content -->
+            <div class="w-2/3 h-full p-3 flex flex-col justify-center gap-4">
+              <p class="m-0 font-semibold md:text-lg">Our Mission</p>
+              <h2 class="m-0 text-4xl md:text-5xl">Inspire, Innovate, Share</h2>
+              <p class="md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <!-- Image -->
+            <div 
+            class="Image w-1/3 h-full bg-[url(\public\img\AboutUs\OurMission-Vission\OurMission.png)] bg-center bg-cover">
+            </div>
+
+          </div>
+
+          <!-- OurVission -->
+          <div class="OurVission w-full h-2/5 flex">
+
+            <!-- Image -->
+            <div 
+            class="Image w-1/3 h-full bg-[url(\public\img\AboutUs\OurMission-Vission\OurVission.png)] bg-center bg-cover">
+            </div>
+
+            <!-- Content -->
+            <div class="w-2/3 h-full p-3 flex flex-col justify-center gap-4">
+              <p class="m-0 font-semibold text-lg">Our Mission</p>
+              <h2 class="m-0 text-4xl md:text-5xl">Laser focus</h2>
+              <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+      <!-- Benefits -->
+      <div class="Benefits w-full h-[750px] flex items-center justify-center">
+
+        <div class="child w-full md:w-[95.5rem] h-full flex flex-col">
+
+          <!-- Heading -->
+          <h2 class="w-full h-1/6 text-center text-4xl md:text-6xl align-content-center">The benefits of working with us</h2>
+
+          <!-- Cards -->
+          <div class="w-full h-4/6 flex items-center p-2 gap-2">
+            
+            <div class="Card w-1/3 h-fit md:h-full bg-[#F4F6FC] p-3 flex flex-col justify-center gap-3">
+            
+              <img src="./public/svg/features/Icon6.svg" class="w-6 md:w-12" alt="">
+
+              <h2 class="font-semibold text-lg md:text-4xl m-0">
+                Customize with ease
+              </h2>
+
+              <p class="text-[#282938] text-sm md:text-xl">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. Lorem ipsum dolor sit amet consectetur
+              </p>
+
+            </div>
+
+            <div class="Card w-1/3 h-fit md:h-full bg-[#F4F6FC] p-3 flex flex-col justify-center gap-3">
+            
+              <img src="./public/svg/features/Icon3.svg" class="w-6 md:w-12" alt="">
+
+              <h2 class="font-semibold text-lg md:text-4xl m-0">
+                Perfectly Responsive
+              </h2>
+
+              <p class="text-[#282938] text-sm md:text-xl">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. Lorem ipsum dolor sit amet consectetur
+              </p>
+
+            </div>
+
+            <div class="Card w-1/3 h-fit md:h-full bg-[#F4F6FC] p-3 flex flex-col justify-center gap-3">
+            
+              <img src="./public/svg/features/Icon1.svg" class="w-6 md:w-12" alt="">
+
+              <h2 class="font-semibold text-lg md:text-4xl m-0">
+                Friendly Support
+              </h2>
+
+              <p class="text-[#282938] text-sm md:text-xl">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. Lorem ipsum dolor sit amet consectetur
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Logos -->
+          <div class="Logos w-full h-1/6 flex justify-evenly">
+
+            <img src="./public/svg/logos/Logo Number.svg" class="w-24 md:w-32" alt="">
+            <img src="./public/svg/logos/Logo 1.svg" class="w-24 md:w-32" alt="">
+            <img src="./public/svg/logos/Logo 2.svg" class="w-24 md:w-32" alt="">
+            <img src="./public/svg/logos/Logo 3.svg" class="w-24 md:w-32" alt="">
+            <img src="./public/svg/logos/Logo 4.svg" class="w-24 md:w-32" alt="">
+            <img src="./public/svg/logos/Logo 5.svg" class="w-24 md:w-32" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="w-full h-[30.56rem] bg-[#1C1E53] flex flex-col items-center">
+
+      <!-- FooterHead -->
+      <div class="FooterHead w-full md:w-[95.5rem] h-[90%] flex flex-col justify-center px-3 relative">
+
+        <!-- Content -->
+        <div class="Content w-full md:w-[95.5rem] flex gap-5">
+
+          <div class="flex flex-col gap-3 w-1/2">
+            <h2 class="text-white text-2xl md:text-4xl">{Finsweet</h2>
+            <p class="text-white text-sm md:text-lg">
+              We are always open to discuss your project and improve your online presence.
+            </p>
+          </div>
+
+          <div class="w-1/2 flex flex-col gap-3">
+            <h2 class="text-white text-2xl md:text-4xl">Lets Talk!</h2>
+            <p class="text-[#F4F6FC] text-sm md:text-lg">We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
+            <div class="flex gap-4">
+              <img src="./public/svg/socials/facebook.svg" alt="">
+              <img src="./public/svg/socials/instagram.svg" alt="">
+              <img src="./public/svg/socials/linkdin.svg" alt="">
+              <img src="./public/svg/socials/twitter.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ContentInfo -->
+        <div class="ContentInfo w-1/2 h-16 md:h-20 bg-[#FCD980] absolute bottom-0 flex p-2 items-center">
+
+          <div class="w-1/2 h-full flex flex-col justify-center">
+            <h2 class="text-base md:text-xl m-0">Email me at</h2>
+            <p class="text-sm md:text-lg m-0">contact@website.com</p>
+          </div>
+
+          <div class="w-1/2 h-full flex flex-col justify-center">
+            <h2 class="text-base md:text-xl m-0">Call us</h2>
+            <p class="text-sm md:text-lg m-0">0927 6277 28525</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FooterLinks -->
+      <div class="FooterLinks w-full h-[10%] flex justify-center items-center bg-white">
+
+        <div class="child w-full md:w-[95.5rem] h-full flex items-center justify-between">
+
+          <div>
+            <p class="m-0 font-semibold">Copyright 2022, Finsweet.com</p>
+          </div>
+
+          <div class="w-1/2 flex justify-evenly">
+            <a href="./index.html" target="_blank" class="no-underline text-black">Home</a>
+            <a href="#NavBar" class="no-underline text-black">About Us</a>
+            <a href="" class="no-underline text-black">Features</a>
+            <a href="./Pricing.html" target="_blank" class="no-underline text-black">Pricing</a>
+            <a href="" class="no-underline text-black">FAQ</a>
+            <a href="" class="no-underline text-black">Blog</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
